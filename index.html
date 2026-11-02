@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arshia Restaurant — Wood-Fired Kitchen</title>
+  <meta name="description" content="Arshia Restaurant is a wood-fired kitchen serving seasonal tasting menus, dry-aged cuts and natural wines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2000&q=80&auto=format">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ CINEMATIC INTRO ============ -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-curtain intro-top"></div>
+    <div class="intro-curtain intro-bottom"></div>
+    <div class="intro-inner">
+      <p class="intro-word"><span>A</span><span>r</span><span>s</span><span>h</span><span>i</span><span>a</span></p>
+      <div class="intro-line"></div>
+      <p class="intro-sub">Restaurant &middot; Est. 2014</p>
+    </div>
+  </div>
+
+  <!-- Cinematic mode layers -->
+  <div class="letterbox letterbox-top" aria-hidden="true"></div>
+  <div class="letterbox letterbox-bottom" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Arshia Restaurant home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c2 5 7 7 7 14a7 7 0 0 1-14 0c0-4 2-6 3-8 .5 2 1.5 3 3 3-1-3 0-6 1-9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span class="logo-text"><span class="logo-name">Arshia</span><span class="logo-sub">Restaurant</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#signatures">Signatures</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="cine-toggle" id="cineToggle" aria-pressed="false" aria-label="Cinematic mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 5v14M17 5v14M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span class="cine-label">Cinematic</span>
+        <span class="cine-switch" aria-hidden="true"></span>
+      </button>
+      <a href="#reserve" class="btn btn-gold btn-sm header-cta">Reserve</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO (3D) ============ -->
+    <section class="hero" id="top">
+      <div class="hero-media" id="heroMedia">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2000&q=80&auto=format" alt="A plated dish under warm candlelight" fetchpriority="high">
+      </div>
+      <div class="hero-overlay"></div>
+      <canvas class="hero-3d" id="hero3d" aria-hidden="true"></canvas>
+      <div class="container hero-content" id="heroContent">
+        <p class="eyebrow reveal">Est. 2014 &middot; Wood-Fired Kitchen</p>
+        <h1 class="hero-title reveal">Cooked over <em>fire.</em><br>Served with <em>soul.</em></h1>
+        <p class="hero-sub reveal">A seasonal tasting kitchen where every plate meets open flame, local oak and the patience of slow cooking.</p>
+        <div class="hero-actions reveal">
+          <a href="#reserve" class="btn btn-gold">Book a Table</a>
+          <a href="#experience" class="btn btn-ghost">
+            <svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+            Watch the Story
+          </a>
+        </div>
+      </div>
+      <div class="hero-meta container">
+        <div><span class="meta-num">4.9</span><span class="meta-label">Guest rating</span></div>
+        <div><span class="meta-num">12</span><span class="meta-label">Years of fire</span></div>
+        <div><span class="meta-num">2&times;</span><span class="meta-label">Michelin recommended</span></div>
+      </div>
+      <a href="#story" class="scroll-cue" aria-label="Scroll to our story"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Dry-Aged Cuts</span><i>✦</i><span>Wood-Fired Bread</span><i>✦</i><span>Natural Wines</span><i>✦</i><span>Seasonal Tasting</span><i>✦</i><span>Open Kitchen</span><i>✦</i>
+        <span>Dry-Aged Cuts</span><i>✦</i><span>Wood-Fired Bread</span><i>✦</i><span>Natural Wines</span><i>✦</i><span>Seasonal Tasting</span><i>✦</i><span>Open Kitchen</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story" id="story">
+      <div class="container story-grid">
+        <div class="story-images reveal" data-tilt>
+          <img class="story-img-main" src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&q=80&auto=format" alt="Our chef finishing a dish at the pass" loading="lazy" width="900" height="1125">
+          <img class="story-img-small depth" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&auto=format" alt="The candlelit dining room" loading="lazy" width="600" height="600">
+          <div class="story-badge depth">
+            <span class="badge-num">12</span>
+            <span class="badge-text">years<br>of open fire</span>
+          </div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow reveal">Our Story</p>
+          <h2 class="section-title reveal">A kitchen built around <em>one flame.</em></h2>
+          <p class="lead reveal">Arshia Restaurant began with a single wood-burning hearth and a simple belief: the best food is honest, seasonal and touched by fire.</p>
+          <p class="reveal">We work with eleven small farms within 80 miles of our door. Our oak is sourced from managed forests, our bread is proofed for 48 hours, and our menu changes with the market every week.</p>
+          <div class="signature reveal">
+            <div>
+              <p class="sig-name">Marco Ellison</p>
+              <p class="sig-role">Executive Chef &amp; Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">The Menu</p>
+          <h2 class="section-title reveal">Seasonal. Simple. <em>Unforgettable.</em></h2>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Menu categories">
+          <button role="tab" aria-selected="true" aria-controls="tab-starters" id="t-starters" class="tab active">Starters</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-mains" id="t-mains" class="tab" tabindex="-1">Mains</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-desserts" id="t-desserts" class="tab" tabindex="-1">Desserts</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-drinks" id="t-drinks" class="tab" tabindex="-1">Drinks</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" role="tabpanel" id="tab-starters" aria-labelledby="t-starters">
+            <article class="dish"><div class="dish-top"><h3>Ember-Roasted Beets</h3><span class="dots"></span><span class="price">$16</span></div><p>Whipped goat cheese, smoked hazelnut, aged balsamic</p></article>
+            <article class="dish"><div class="dish-top"><h3>Hearth Bread &amp; Cultured Butter</h3><span class="dots"></span><span class="price">$9</span></div><p>48-hour sourdough, brown butter, flaked sea salt</p></article>
+            <article class="dish"><div class="dish-top"><h3>Charred Octopus</h3><span class="dots"></span><span class="price">$22</span></div><p>Smoked paprika, crispy potato, salsa verde</p><span class="tag">Chef's pick</span></article>
+            <article class="dish"><div class="dish-top"><h3>Beef Tartare</h3><span class="dots"></span><span class="price">$21</span></div><p>Cured yolk, capers, shallot, oak-smoked crisps</p></article>
+            <article class="dish"><div class="dish-top"><h3>Burrata &amp; Stone Fruit</h3><span class="dots"></span><span class="price">$18</span></div><p>Grilled peach, basil oil, toasted pistachio</p></article>
+            <article class="dish"><div class="dish-top"><h3>Wood-Fired Oysters</h3><span class="dots"></span><span class="price">$24</span></div><p>Half dozen, garlic-herb butter, lemon</p></article>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="tab-mains" aria-labelledby="t-mains" hidden>
+            <article class="dish"><div class="dish-top"><h3>45-Day Dry-Aged Ribeye</h3><span class="dots"></span><span class="price">$68</span></div><p>Bone marrow butter, charred shallot, red wine jus</p><span class="tag">Signature</span></article>
+            <article class="dish"><div class="dish-top"><h3>Whole Grilled Branzino</h3><span class="dots"></span><span class="price">$44</span></div><p>Fennel, citrus, caper brown butter</p></article>
+            <article class="dish"><div class="dish-top"><h3>Oak-Smoked Half Chicken</h3><span class="dots"></span><span class="price">$34</span></div><p>Salsa rossa, crispy skin, roasted roots</p></article>
+            <article class="dish"><div class="dish-top"><h3>Braised Short Rib</h3><span class="dots"></span><span class="price">$42</span></div><p>Twelve-hour braise, parsnip purée, gremolata</p></article>
+            <article class="dish"><div class="dish-top"><h3>Wild Mushroom Risotto</h3><span class="dots"></span><span class="price">$29</span></div><p>Aged parmesan, truffle, crispy sage</p><span class="tag">Vegetarian</span></article>
+            <article class="dish"><div class="dish-top"><h3>Ember Lamb Rack</h3><span class="dots"></span><span class="price">$56</span></div><p>Mint chimichurri, smoked eggplant, pomegranate</p></article>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="tab-desserts" aria-labelledby="t-desserts" hidden>
+            <article class="dish"><div class="dish-top"><h3>Burnt Basque Cheesecake</h3><span class="dots"></span><span class="price">$14</span></div><p>Caramelised top, macerated berries</p><span class="tag">Guest favourite</span></article>
+            <article class="dish"><div class="dish-top"><h3>Dark Chocolate Torte</h3><span class="dots"></span><span class="price">$15</span></div><p>Smoked sea salt, crème fraîche, cocoa nib</p></article>
+            <article class="dish"><div class="dish-top"><h3>Fire-Roasted Pear</h3><span class="dots"></span><span class="price">$13</span></div><p>Honey, mascarpone, oat crumble</p></article>
+            <article class="dish"><div class="dish-top"><h3>Seasonal Sorbet Trio</h3><span class="dots"></span><span class="price">$11</span></div><p>Made in-house daily</p></article>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="tab-drinks" aria-labelledby="t-drinks" hidden>
+            <article class="dish"><div class="dish-top"><h3>Smoked Old Fashioned</h3><span class="dots"></span><span class="price">$17</span></div><p>Bourbon, demerara, oak smoke, orange</p><span class="tag">House classic</span></article>
+            <article class="dish"><div class="dish-top"><h3>Ember Negroni</h3><span class="dots"></span><span class="price">$16</span></div><p>Gin, charred citrus vermouth, bitter aperitivo</p></article>
+            <article class="dish"><div class="dish-top"><h3>Natural Wine Flight</h3><span class="dots"></span><span class="price">$28</span></div><p>Three pours chosen by our sommelier</p></article>
+            <article class="dish"><div class="dish-top"><h3>Garden Spritz (zero-proof)</h3><span class="dots"></span><span class="price">$11</span></div><p>Cucumber, elderflower, tonic, mint</p></article>
+          </div>
+        </div>
+
+        <div class="center menu-cta reveal">
+          <a href="#reserve" class="btn btn-outline">Reserve for Tonight</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CINEMATIC SCROLL SCENES ============ -->
+    <section class="cine" id="experience" aria-label="The Arshia Restaurant experience">
+      <div class="cine-sticky">
+        <div class="cine-frame active" data-scene="0">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2000&q=80&auto=format" alt="" loading="lazy">
+        </div>
+        <div class="cine-frame" data-scene="1">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=2000&q=80&auto=format" alt="" loading="lazy">
+        </div>
+        <div class="cine-frame" data-scene="2">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2000&q=80&auto=format" alt="" loading="lazy">
+        </div>
+        <div class="cine-shade"></div>
+        <div class="cine-bars" aria-hidden="true"><span></span><span></span></div>
+
+        <div class="container cine-copy">
+          <div class="cine-text active" data-scene="0">
+            <p class="cine-chapter">Chapter I</p>
+            <h2>The <em>Fire.</em></h2>
+            <p>Every service begins at 2 PM, when the oak is lit and left to burn down to glowing embers.</p>
+          </div>
+          <div class="cine-text" data-scene="1">
+            <p class="cine-chapter">Chapter II</p>
+            <h2>The <em>Craft.</em></h2>
+            <p>Nine cooks, one open hearth. Nothing hidden, nothing rushed, everything finished by hand.</p>
+          </div>
+          <div class="cine-text" data-scene="2">
+            <p class="cine-chapter">Chapter III</p>
+            <h2>The <em>Table.</em></h2>
+            <p>Candlelight, slow conversation and plates worth remembering. This is why we cook.</p>
+          </div>
+        </div>
+
+        <div class="cine-hud container" aria-hidden="true">
+          <span class="cine-count"><b id="cineNum">01</b> / 03</span>
+          <span class="cine-progress"><i id="cineBar"></i></span>
+          <span class="cine-rec"><i></i> Scroll to play</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE DISHES (3D CAROUSEL) ============ -->
+    <section class="section signatures" id="signatures">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <p class="eyebrow reveal">Signature Plates</p>
+            <h2 class="section-title reveal">Dishes guests <em>travel for.</em></h2>
+          </div>
+          <p class="reveal muted">Spin the table. Drag, swipe or use the arrows to explore our six signature plates.</p>
+        </div>
+      </div>
+
+      <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Signature dishes">
+        <div class="carousel-stage" id="carouselStage">
+          <div class="carousel-ring" id="carouselRing">
+            <article class="c-card" aria-roledescription="slide" aria-label="1 of 6">
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=700&q=80&auto=format" alt="Sliced dry-aged ribeye steak" loading="lazy">
+              <div class="c-body"><span class="sig-num">01</span><h3>Dry-Aged Ribeye</h3><p>45 days aged, seared over white oak.</p></div>
+            </article>
+            <article class="c-card" aria-roledescription="slide" aria-label="2 of 6">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80&auto=format" alt="A seasonal plate of grilled food" loading="lazy">
+              <div class="c-body"><span class="sig-num">02</span><h3>Market Plate</h3><p>This morning's harvest, kissed by fire.</p></div>
+            </article>
+            <article class="c-card" aria-roledescription="slide" aria-label="3 of 6">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700&q=80&auto=format" alt="A plated dessert" loading="lazy">
+              <div class="c-body"><span class="sig-num">03</span><h3>Burnt Cheesecake</h3><p>Our most requested dessert.</p></div>
+            </article>
+            <article class="c-card" aria-roledescription="slide" aria-label="4 of 6">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80&auto=format" alt="Grilled meats on a board" loading="lazy">
+              <div class="c-body"><span class="sig-num">04</span><h3>Hearth Board</h3><p>Smoked cuts to share, for two or more.</p></div>
+            </article>
+            <article class="c-card" aria-roledescription="slide" aria-label="5 of 6">
+              <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80&auto=format" alt="A colourful plated starter" loading="lazy">
+              <div class="c-body"><span class="sig-num">05</span><h3>Garden Course</h3><p>Charred greens, herbs and citrus.</p></div>
+            </article>
+            <article class="c-card" aria-roledescription="slide" aria-label="6 of 6">
+              <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=700&q=80&auto=format" alt="Cocktails at the bar" loading="lazy">
+              <div class="c-body"><span class="sig-num">06</span><h3>Smoked Old Fashioned</h3><p>Bourbon, demerara and oak smoke.</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="carousel-controls container">
+          <button class="c-btn" id="cPrev" aria-label="Previous dish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="c-status" id="cStatus" aria-live="polite">01 / 06 — Dry-Aged Ribeye</p>
+          <button class="c-btn" id="cNext" aria-label="Next dish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE BAND ============ -->
+    <section class="quote-band">
+      <div class="quote-bg" id="quoteBg"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=2000&q=80&auto=format" alt="" loading="lazy"></div>
+      <div class="container quote-inner">
+        <svg class="quote-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34c0-9 4-16 12-20l2 3c-5 3-7 7-7 11h7v10H8v-4Zm20 0c0-9 4-16 12-20l2 3c-5 3-7 7-7 11h7v10H28v-4Z" fill="currentColor"/></svg>
+        <blockquote class="reveal">
+          <p>"The most memorable meal I've had this year. Smoke, flame and restraint, in perfect balance."</p>
+          <footer>— The City Food Review</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section reviews">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Guest Words</p>
+          <h2 class="section-title reveal">Loved by <em>our regulars.</em></h2>
+        </div>
+        <div class="review-grid">
+          <figure class="review reveal" data-tilt>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Every course felt intentional. The ribeye alone is worth the trip, and the staff made our anniversary feel truly special."</blockquote>
+            <figcaption><span class="avatar">SR</span><span><strong>Sofia R.</strong><small>Anniversary dinner</small></span></figcaption>
+          </figure>
+          <figure class="review reveal" data-tilt>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Sitting at the chef's counter and watching everything happen over the fire was pure theatre. Book the tasting menu."</blockquote>
+            <figcaption><span class="avatar">JT</span><span><strong>James T.</strong><small>Chef's counter</small></span></figcaption>
+          </figure>
+          <figure class="review reveal" data-tilt>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Warm, candlelit and never stuffy. The natural wine list surprised us in the best way. Already planning our next visit."</blockquote>
+            <figcaption><span class="avatar">AK</span><span><strong>Amira K.</strong><small>Friday dinner</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <p class="eyebrow reveal">Gallery</p>
+            <h2 class="section-title reveal">A night at <em>Arshia.</em></h2>
+          </div>
+          <a href="#visit" class="link-arrow reveal">Plan your visit <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="gallery">
+          <figure class="g g1 reveal" data-tilt><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format" alt="The main dining room at night" loading="lazy"></figure>
+          <figure class="g g2 reveal" data-tilt><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80&auto=format" alt="Cocktails at the bar" loading="lazy"></figure>
+          <figure class="g g3 reveal" data-tilt><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80&auto=format" alt="Grilled meats on a board" loading="lazy"></figure>
+          <figure class="g g4 reveal" data-tilt><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80&auto=format" alt="Guests dining together" loading="lazy"></figure>
+          <figure class="g g5 reveal" data-tilt><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&q=80&auto=format" alt="A colourful plated starter" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="section reserve" id="reserve">
+      <div class="container reserve-grid">
+        <div class="reserve-copy">
+          <p class="eyebrow reveal">Reservations</p>
+          <h2 class="section-title reveal">Your table <em>is waiting.</em></h2>
+          <p class="reveal muted">We hold tables for 15 minutes. For parties of 8 or more, private dining, or the chef's counter, please call us directly.</p>
+          <ul class="reserve-list reveal">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5C3 14 10 21 18.5 21l2.5-3.5-4.5-2-2 2c-2.5-1-5-3.5-6-6l2-2-2-4.5L5 3 3 5.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><a href="tel:+15550192233">(555) 019-2233</a></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><a href="mailto:hello@arshia.example">hello@arshia.example</a></li>
+          </ul>
+        </div>
+
+        <form class="reserve-form reveal" id="reserveForm" novalidate>
+          <div class="field">
+            <label for="name">Full name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+            <p class="err" id="name-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+            <p class="err" id="email-err" aria-live="polite"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Date <span aria-hidden="true">*</span></label>
+              <input id="date" name="date" type="date" required aria-describedby="date-err">
+              <p class="err" id="date-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <select id="time" name="time">
+                <option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option><option selected>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="notes">Special requests</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block" id="submitBtn">
+            <span class="btn-label">Confirm Reservation</span>
+          </button>
+          <p class="form-success" id="formSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-card reveal" data-tilt>
+          <h3>Location</h3>
+          <p>218 Hearthstone Avenue<br>Riverside District</p>
+          <a href="#" class="link-arrow">Get directions <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="visit-card reveal" data-tilt>
+          <h3>Hours</h3>
+          <dl class="hours">
+            <div><dt>Mon</dt><dd>Closed</dd></div>
+            <div><dt>Tue – Thu</dt><dd>5:00 – 10:00 PM</dd></div>
+            <div><dt>Fri – Sat</dt><dd>5:00 – 11:00 PM</dd></div>
+            <div><dt>Sunday</dt><dd>11:00 AM – 9:00 PM</dd></div>
+          </dl>
+        </div>
+        <div class="visit-card reveal" data-tilt>
+          <h3>Private Dining</h3>
+          <p>Our oak room seats up to 24 guests for celebrations, dinners and events.</p>
+          <a href="mailto:events@arshia.example" class="link-arrow">Enquire <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <a href="#top" class="logo logo-lg" aria-label="Arshia Restaurant home">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c2 5 7 7 7 14a7 7 0 0 1-14 0c0-4 2-6 3-8 .5 2 1.5 3 3 3-1-3 0-6 1-9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="logo-text"><span class="logo-name">Arshia</span><span class="logo-sub">Restaurant</span></span>
+        </a>
+        <p class="muted footer-tag">Wood-fired kitchen &amp; wine bar.</p>
+      </div>
+      <form class="newsletter" id="newsletter" novalidate>
+        <label for="nl-email">Get our seasonal menu &amp; event invites</label>
+        <div class="nl-row">
+          <input id="nl-email" type="email" autocomplete="email" placeholder="Your email" required>
+          <button class="btn btn-gold btn-sm" type="submit">Subscribe</button>
+        </div>
+        <p class="nl-msg" id="nlMsg" role="status"></p>
+      </form>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Arshia Restaurant. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 3 2.5 5 5.5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

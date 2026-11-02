@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Editor and tool settings
+.vscode/
+.idea/
+.claude/
+
+# Dependencies and logs
+node_modules/
+*.log
+
+# Environment files (never commit secrets)
+.env
+.env.*
