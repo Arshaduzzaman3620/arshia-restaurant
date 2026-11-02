@@ -6,6 +6,12 @@ A cinematic, 3D-styled website for a fictional fine-dining restaurant, built wit
 
 ![Arshia Restaurant homepage](assets/preview.jpg)
 
+
+
+
+
+
+
 ## Features
 
 - **3D hero scene**: glowing embers rendered in WebGL with Three.js, with a mouse-driven parallax camera
